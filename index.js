@@ -13,8 +13,9 @@ const questions = [
         message: "What color would you like the letters?"
     },
     {
-        type: "checkbox",
+        type: "list",
         description: "shape",
+        message: "What shape would you like to use?",
         choices: ["square", "circle", "triangle"],
     },
     {
