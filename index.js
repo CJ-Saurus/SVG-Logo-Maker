@@ -4,22 +4,22 @@ const inquirer = require("inquirer");
 const questions = [
     {
         type: "input",
-        description: ,
+        description: "text",
         message: "Enter up to 3 characters."
     },
     {
         type: "input",
-        description: ,
+        description: "text-color",
         message: "What color would you like the letters?"
     },
     {
         type: "checkbox",
-        description: ,
+        description: "shape",
         choices: ["square", "circle", "triangle"],
     },
     {
         type: "input",
-        description: ,
+        description: "shape-color",
         message: "What color would you like the shape?"
     },
 
