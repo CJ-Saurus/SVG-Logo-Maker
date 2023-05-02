@@ -7,6 +7,7 @@ Build a Node.js command-line application that takes in user input to generate a 
 ## Work Completed
 
 Created an SVG logo generator using Inquirer and Node.
+** Was not able to get text centered over image.
 
 ## Screenshot
 
