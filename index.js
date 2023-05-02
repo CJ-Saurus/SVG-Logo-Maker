@@ -1,4 +1,4 @@
-const fs = require('fs')
+const fs = require('fs');
 const inquirer = require("inquirer");
 const {Triangle, Circle, Square} = require("./lib/shapes");
 
@@ -66,29 +66,29 @@ async function init() {
         console.log("Only 1-3 characters please.");
         return;
     }
-    console.log("User text: [" + user_text + "]");
+    console.log("Text: [" + user_text + "]");
 
     let user_font_color = answers["text-color"];
-    console.log("User font color: [" + user_font_color + "]");
+    console.log("Font color: [" + user_font_color + "]");
 
     let user_shape_color = answers["shape-color"];
-    console.log("User shape color: [" + user_shape_color + "]");
+    console.log("Shape color: [" + user_shape_color + "]");
 
     let user_shape_type = answers["shape"];
-    console.log("User entered shape = [" + user_shape_type + "]");
+    console.log("Shape = [" + user_shape_type + "]");
 
     let user_shape;
     if (user_shape_type === "Square" || user_shape_type === "square") {
         user_shape = new Square();
-        console.log("User selected Square shape");
+        console.log("You've selected Square shape");
     }
     else if (user_shape_type === "Circle" || user_shape_type === "circle") {
         user_shape = new Circle();
-        console.log("User selected Circle shape");
+        console.log("You've selected Circle shape");
     }
     else if (user_shape_type === "Triangle" || user_shape_type === "triangle") {
         user_shape = new Triangle();
-        console.log("User selected Triangle shape");
+        console.log("You've selected Triangle shape");
     }
     else {
         console.log("Invalid shape!");
